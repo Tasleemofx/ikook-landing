@@ -1,4 +1,5 @@
 import React from 'react'
+import {  FiShoppingCart } from "react-icons/fi"
 import Logo from "../../assets/logo.png"
 
 const Nav = () => {
@@ -13,6 +14,11 @@ const Nav = () => {
                     <input type="text" defaultValue="Guest" />
                     <button>Search</button>
                 </form>
+            </span>
+            <span>
+              <FiShoppingCart />
+              <a>Login</a>
+              
             </span>
         </nav>
     </div>

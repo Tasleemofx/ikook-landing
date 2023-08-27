@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Logo from "../../assets/footer-Icon.png"
 import Payment from "../../assets/payment-grp.png"
 
@@ -15,14 +15,14 @@ const Footer = () => {
                     <input type="text" placeholder="Enter Email to join our Newsletter" />
                     <button type="submit">Subscribe</button>
                 </form>
-                <div>
+                <div className="f-col">
                     <p>iKooK</p>
                     <a>How it works</a>
                     <a>FAQs</a>
                     <a>Privacy Policy</a>
                     <a>Terms & Condition</a>
                 </div>
-                <div>
+                <div className="f-col">
                     <p>Services</p>
                     <a>Chef at Home</a>
                     <a>Large Events</a>
@@ -30,7 +30,7 @@ const Footer = () => {
                     <a>Fine Dining</a>
                     <a>More +</a>
                 </div>
-                <div>
+                <div className="f-col">
                     <p>Experiences</p>
                     <a>Signup as Chef</a>
                     <a>GIft Experience</a>
@@ -39,10 +39,12 @@ const Footer = () => {
                     <a>Blog</a>
                 </div>
                 <div>
-                    <p>Contact Us</p>
-                    <a>+44 203 807 8500</a>
-                    <a>team@ikook.co.uk</a>
-                    <a>Support</a>
+                    <div className="f-col">
+                        <p>Contact Us</p>
+                        <a>+44 203 807 8500</a>
+                        <a>team@ikook.co.uk</a>
+                        <a>Support</a>
+                    </div>
                     <img src={Payment} alt="payment icons" />
                 </div>
             </section>
