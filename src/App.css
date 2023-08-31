@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
 .d-flex{
   display: flex
 }
@@ -5,4 +11,12 @@
 .f-col{
   display: flex;
   flex-direction: column;
+}
+
+.mar1{
+  margin: 1em;
+}
+
+.pad1{
+  padding: 1em;
 }

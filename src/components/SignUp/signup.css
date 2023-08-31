@@ -1,0 +1,143 @@
+.signup-container{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mn-sg-img{
+    display: none;
+}
+
+.form-div nav{
+    text-align: center;
+}
+.inp-div, .sm-div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 1.5px solid #3233354D;;
+    margin-bottom: 1.5em;
+    position: relative;
+    align-content: center;
+}
+.form-outline{
+    display: block;
+    margin-inline: 2em;
+}
+.form-outline input[type="text"],
+.form-outline input[type="email"],
+.form-outline input[type="password"]{
+    height: inherit;
+    outline: 0;
+    border: 0;
+    margin: 1em;
+    border-radius: 0;
+    padding-left: 1em;
+}
+.form-outline select{
+    height: 3em;
+    width: 80%;
+    margin-bottom: 1.5em;
+}
+
+.form-outline label{
+    position: absolute;
+    top: 0.4em;
+    left: 0.5em;
+}
+.form-outline input:focus+label,
+.inpt+label{
+    top: -1em;
+    background: #fff;
+    color: cornflowerblue;
+}
+.bool-q{
+    margin: 1em;
+}
+.bool-q span{
+    margin-inline: 1em;
+}
+.yel-bd{
+    padding: 1em;
+    border: 2px solid #fcc01c;
+}
+.agreemnt{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 80%;
+}
+.alr{
+    margin: 1em auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 60%;
+}
+.alr a,
+.alr a:visited{
+    color: #fcc01c;
+}
+.spbx-f{
+    display: flex;
+    align-items: center;
+}
+.spbx-f svg{
+    width: 2em;
+    height: 2em;
+    font-weight: bold;
+    color: #fcc01c;
+}
+.sl{
+    background: #fcc01c;
+}
+.s-u-btn{
+    display: block;
+    background: #fcc01c;
+    border: 0;
+    border-radius: 5px;
+    height: 3em;
+    width: 60%;
+    margin: 2em;
+}
+@media screen and (min-width: 768px){
+    .mn-sg-img{
+    display: block;
+}
+.body-f {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.inp-div,
+.sm-div {
+    height: 2.5em;
+    width: 80%;
+}
+.sm-bx {
+    display: flex;
+    gap: 15px;
+}
+.flex-bg{
+    display: flex;
+    gap: 8px;
+}
+
+.sm-bx select{
+    width: 39.5%;
+}
+
+.sm-div{
+    width: 39.5%;
+    margin-bottom:1em;
+    
+}
+
+.s-u-btn{
+        margin-inline: 1em;
+}
+}
