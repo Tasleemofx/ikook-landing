@@ -1,20 +1,26 @@
 // import React from 'react'
 import Logo from "../../assets/footer-Icon.png"
+import soc from "../../assets/socialmedia.png"
 import Payment from "../../assets/payment-grp.png"
+import "./footer.css"
+
 
 const Footer = () => {
   return (
         <footer>
-            <section>
-                <h3 className="big-join">Join our Newsletter</h3>
-                <img src={Logo} alt="footer logo" />
+            <section className="section-on">
+                <p className="big-join">Join our Newsletter</p>
+                <img src={Logo} alt="footer logo" className="flog" />
+                <img src={soc} alt="social media" className="soc"/>
+                <p>Copyright &copy; 2023 iKooK. All rights reserved</p>
             </section>
-            <section>
-                <form>
-                    <input type="text" placeholder="Enter your name" />
-                    <input type="text" placeholder="Enter Email to join our Newsletter" />
-                    <button type="submit">Subscribe</button>
+            <section className="section-tw">
+                <form className="foot-form">
+                    <input type="text" placeholder="Enter your name" className="nam-inp"/>
+                    <input type="text" placeholder="Enter Email to join our Newsletter" className="mai-inp" />
+                    <button type="submit" className="subscribe">Subscribe</button>
                 </form>
+                <section className="section-th">
                 <div className="f-col">
                     <p>iKooK</p>
                     <a>How it works</a>
@@ -47,6 +53,7 @@ const Footer = () => {
                     </div>
                     <img src={Payment} alt="payment icons" />
                 </div>
+                </section>
             </section>
             
 

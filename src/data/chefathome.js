@@ -69,6 +69,7 @@ export const chefatHome = [
         cuisine: "Mexican",
         image: "./assets/cah6.png",
         id: 6,
-        avatar: "./assets/avi.png"
+        avatar: "./assets/avicah1.png"
     },
 ]
+

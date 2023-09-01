@@ -1,0 +1,93 @@
+footer{
+    background: #fcc01c;
+    text-align: center;
+    padding: 1em;
+    width: 100vw;
+    color: #000;
+}
+
+.section-on{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.big-join{
+    color: #060605;
+    font-family: Poppins;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.375rem;
+}
+.flog{
+    width: 4rem;
+    height: 7rem;
+}
+.soc{
+    height: 2em;
+    width: 10em;
+    /* ma */
+}
+.foot-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.foot-form input{
+    border: 0;
+    outline: 0;
+    margin: 5px 0;
+    padding: 0.5em;
+    border-radius: 40px;
+}
+.foot-form button{
+    border-radius: 40px;
+    background: #000;
+    color: #fff;
+    margin: 1em;
+}
+
+@media screen and (min-width: 768px){
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 30vw));
+}
+.flog {
+    width: 5rem;
+    height: 7rem;
+}
+.section-on{
+    margin-top: 2em
+}
+.section-tw{
+    display: grid;
+}
+.section-th{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 1em auto;
+}
+
+.foot-form{
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.nam-inp{
+    width: 261px;
+    height: 3.75rem;
+    margin-right: 5px;
+}
+.mai-inp{
+    width: 499px;
+    height: 3.75rem;
+    margin-right: 5px;
+}
+.foot-form button{
+    height: 3.75rem
+}
+}
