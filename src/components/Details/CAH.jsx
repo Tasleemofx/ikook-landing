@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { AiFillStar, AiOutlineHeart } from "react-icons/ai"
 import { IoLocationSharp } from "react-icons/io5"
 import { chefatHome } from "../../data/chefathome"
-import "./menudetails.css"
+import "./styles/menudetails.css"
 
-const Menudetails = ({ currentData}) => {
+const ChefatHome = ({ currentData}) => {
 
     const [data, setData] = useState(chefatHome)
     const [filterable, setFilterable] = useState(chefatHome)
@@ -29,13 +29,13 @@ const Menudetails = ({ currentData}) => {
         }
     },[currentData])
   return (
-    <div>
+    <div className="cah-div">
         {data?.map(({menuName, price, chef, location, averageReviews, totalReviews, cuisine, image, id, avatar})=>{
             return(
-                <div key={id}>
-                    <AiOutlineHeart />
-                    <span>{cuisine}</span>
-                    <img src={image} alt="imagefile" />
+                <div key={id} className="cah-card">
+                    <AiOutlineHeart className='cah-heart'/>
+                    <span className="cah-cuisine">{cuisine}</span>
+                    <img src={image} alt="imagefile" className='cah-img'/>
                     
                     <span className="namenpr">
                         <p>{menuName}</p>
@@ -59,4 +59,4 @@ const Menudetails = ({ currentData}) => {
   )
 }
 
-export default Menudetails
+export default ChefatHome

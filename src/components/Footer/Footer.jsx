@@ -22,14 +22,14 @@ const Footer = () => {
                 </form>
                 <section className="section-th">
                 <div className="f-col">
-                    <p>iKooK</p>
+                    <p className="b-f-head">iKooK</p>
                     <a>How it works</a>
                     <a>FAQs</a>
                     <a>Privacy Policy</a>
                     <a>Terms & Condition</a>
                 </div>
                 <div className="f-col">
-                    <p>Services</p>
+                    <p className="b-f-head">Services</p>
                     <a>Chef at Home</a>
                     <a>Large Events</a>
                     <a>Meal Prep</a>
@@ -37,7 +37,7 @@ const Footer = () => {
                     <a>More +</a>
                 </div>
                 <div className="f-col">
-                    <p>Experiences</p>
+                    <p className="b-f-head">Experiences</p>
                     <a>Signup as Chef</a>
                     <a>GIft Experience</a>
                     <a>Split Bills</a>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <div className="f-col">
-                        <p>Contact Us</p>
+                        <p className="b-f-head">Contact Us</p>
                         <a>+44 203 807 8500</a>
                         <a>team@ikook.co.uk</a>
                         <a>Support</a>

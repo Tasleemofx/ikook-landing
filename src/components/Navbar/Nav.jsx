@@ -12,10 +12,14 @@ import Logo from "../../assets/logo.png"
 import "./nav.css"
 
 const Nav = () => {
-  const [edition, setEdition] = useState(canada)
+  const [edition, setEdition] = useState({name: "Canada", "flag": canada})
   const [openDropdown, setOpenDropdown] = useState(false)
   const [hideBar, setHideBar] = useState(false)
-  const [countries, setCountries] = useState([usa, canada, uk, nig])
+  const [countries, setCountries] = useState([
+    {name: "USA", flag: usa},
+    {name:"Canada",flag: canada},
+    {name: "United Kingdom",flag: uk},
+    {name: "Nigeria",flag:  nig}])
 
   return (
         <nav className="main-nav">
@@ -38,21 +42,20 @@ const Nav = () => {
                 </div>
               <span className={openDropdown?"edition opd":"edition"} 
               onClick={()=> setOpenDropdown(!openDropdown)}>
-                <img src={edition} alt="country" className="country" 
+                <img src={edition.flag} alt="country" className="country" 
                 onClick={()=> setEdition(edition)} />
-                <BiSolidDownArrow />
+                {!openDropdown && <BiSolidDownArrow />}
                 {
-                  openDropdown && <div className="countries-div">
+                  openDropdown && <ul className="countries-div">
                     {
-                      countries.filter(item=> item !== edition)
+                      countries.filter(item=> item.name !== edition.name)
                       .map((item,i)=>{
-                        return <img src={item} key={i} alt="country" className="country" 
-                onClick={()=> setEdition(item)} />
+                        return <li key={i} className="c-liast" onClick={()=> setEdition(item)} >{item.name}</li>
                       })
                     }
                     
                     
-                  </div>
+                  </ul>
                 }
                 
               </span>

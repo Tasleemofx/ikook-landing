@@ -1,0 +1,66 @@
+/* Chef at home mobile */
+
+.cah-div{
+    width: 95vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20.5rem, auto));
+    grid-auto-rows: 25.7rem;
+    margin: 1em auto 2em auto;
+    overflow: hidden
+}
+
+.cah-card{
+    width: 20.5rem;
+    height: 20.6875rem;
+    box-shadow: 0px 4.94185px 4.94185px 0px rgba(0, 0, 0, 0.04);
+    position: relative;
+    margin: 2em auto;
+}
+.cah-img{
+    width: 20.5rem;
+    height: 16.0625rem;
+}
+    .cah-heart{
+        position: absolute;
+        top: 0.3em;
+        right: -1em;
+        color: #fff;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+    .cah-cuisine{
+        position: absolute;
+        left: 1em;
+        top: 1em;
+        background: #fff;
+        border-radius: 1.875rem;
+        padding: 0.5em;
+        color: #323335;
+        text-align: center;
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+.namenpr{
+    position: relative;
+    bottom: 3em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.namenpr p{
+    color: #FFF;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+.namenpr span{
+    color: #FCC01C;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+}

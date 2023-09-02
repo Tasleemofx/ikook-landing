@@ -1,0 +1,72 @@
+.filter-nav{
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+    width: 100%;
+}
+
+.filter-nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 0.625em;
+    }
+.filter-nav ul li {
+        padding: 1em;
+        border-radius: 2.5rem;
+        border: 1px solid #CFCFCE;
+        padding: 0.625em;
+        margin-inline: 1em;
+        list-style-type: none;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1rem;
+        cursor: pointer;
+        font-size: 14px;
+    }
+.active{
+    border-radius: 2.5rem;
+    border: 2px solid #F9DF98;
+    background: #FCC01C;
+    color: #fff;
+}
+.filter-btn{
+    cursor: pointer
+}
+.c-book-div{
+    position: relative;
+    width: 37.75rem;
+    height: 3.6875rem;
+    flex-shrink: 0;
+    border-radius: 2.5rem;
+    border: 1px solid #E7E7E7;
+    background: #FFF;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+.c-book-div input{
+    border: 0;
+    outline: 0;
+    padding-left: 1.2em;
+    width: 25rem
+}
+.c-book-div button{
+    position: absolute;
+    right: 0.3rem;
+    border-radius: 1.875rem;
+    padding: 1em;
+    color: #fff;
+    background: #fcc01c;
+    border: 0;
+}
+
+@media screen and (min-width: 768px){
+
+    .c-book-div {
+            position: relative;
+            width: 37.75rem;
+            font-size: 13px;
+    }
+}

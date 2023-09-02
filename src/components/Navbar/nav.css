@@ -3,7 +3,9 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 1em;
+    padding: 1em;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 .main-logo{
@@ -64,20 +66,34 @@
 }
 .edition{
     border: 0;
-    padding: 0.2em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
     box-shadow: 0px 5px 5px 0px grey;
+    position: relative;
 }
 .countries-div{
     position: absolute;
+    width: 10em;
     top: 2.5em;
+    right: 0;
     display: flex;
     flex-direction: column;
+    background: #ebebeb;
+    padding: 0.5em;
     z-index: 20;
+    cursor: pointer;
 }
  .country {
      width: 1.375rem;
      height: 1.375rem;
      border-radius: 50%;
+ }
+ .c-liast{
+     list-style-type: none;
+ }
+ .c-liast:hover{
+    background: #fcc01c;
  }
 @media screen and (min-width: 768px) {
 
@@ -90,8 +106,9 @@
         .form-only{
             display: flex;
             flex-direction: row;
-            padding: 0.8em;
-            box-shadow: 0px 4.94185px 4.94185px 0px rgba(0, 0, 0, 0.04);
+            padding: 0.8rem;
+            border: 1px solid #ebebeb;
+            box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.04);
             border-radius: 38.60819rem;
         }
         .form-only input{
@@ -102,7 +119,8 @@
         }
        
         .form-only button{
+            border: 0;
             border-radius: 5em;
-            padding: 0.2em 1em;
+            padding: 0.5em 1em;
         }
 }
