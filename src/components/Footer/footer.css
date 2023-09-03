@@ -1,4 +1,4 @@
-footer{
+.m-foot{
     background: #fcc01c;
     text-align: center;
     padding: 1em 0;
@@ -59,7 +59,7 @@ footer{
 }
 
 @media screen and (min-width: 768px){
-footer{
+.m-foot{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 30vw));
     overflow-x: hidden;

@@ -24,7 +24,7 @@ const Filter = ({setOpenFilter, currentData}) => {
                     <input type="text" placeholder="Rice, Spaghetti, Meat, etc" onChange={(e)=> setSearch(e.target.value)}
                     value={search}/>
                 </div>
-                <p className="f-menu-top">Price per person</p>
+                <p className="f-s-menu">Price per person</p>
                 <div className="two-way-slide">
                     <input type="range" value={slide1} onChange={(e)=> setSlide1(e.target.value)} min="0" max="2000" 
                     className="slide1" />
@@ -43,10 +43,57 @@ const Filter = ({setOpenFilter, currentData}) => {
                     </span>
                 </div>
                 <div>
-                    <p>Cuisines</p>
+                    <p className="f-s-menu">Cuisines</p>
+                    <div className="cuisine-list">
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>Italian</label>
+                        </div>
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>Japanese</label>
+                        </div>
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>Indian</label>
+                        </div>
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>French</label>
+                        </div>
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>African</label>
+                        </div>
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>Mediterranean</label>
+                        </div>
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>Chinese</label>
+                        </div>
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>Spanish</label>
+                        </div>
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>BBQ</label>
+                        </div>
+                        <div className="cuisine-item">
+                            <input type="checkbox" name="" id="" />
+                            <label>Fish & Chip</label>
+                        </div>
 
+                    </div>
+                    <a className='more-list'>View all 20</a>
                 </div>
             </main>
+            <footer className="f-foot">
+                <button className="f-clear">Clear All</button>
+                <button className="f-view">View all 50</button>
+            </footer>
         </div>
     </div>
   )

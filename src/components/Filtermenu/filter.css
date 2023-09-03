@@ -65,6 +65,16 @@
 .f-inp-div input{
     width: 30%;
 }
+.f-s-menu{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 1em;
+}
+
 .slide2{
     position: relative;
     right: 5em;
@@ -149,6 +159,38 @@ input[type="range"]::-moz-range-progress {
 }
 .val-boxes input{
   width: 20%;
+}
+.cuisine-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.f-foot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e7e7e7;
+  margin: 1em;
+}
+.f-clear{
+    border-radius: 0.5rem;
+    border: 1px solid #9F9F9E;
+    color: #030302;
+    padding: 0.5em;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-top: 1em;
+}
+.f-view{
+  border-radius: 0.5rem;
+  background: #fcc01c;
+  padding: 0.5em 1em;
+  border-radius: 0.5rem;
+  border: 1px solid #FCC01C;
+  background: #FCC01C;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  margin-top: 1em;
 }
 @media screen and (min-width: 768px) {
     .f-menu-div{

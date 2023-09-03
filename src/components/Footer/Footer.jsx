@@ -9,7 +9,7 @@ import "./footer.css"
 const Footer = () => {
     const navigate = useNavigate()
   return (
-        <footer>
+        <footer className="m-foot">
             <section className="section-on">
                 <p className="big-join">Join our Newsletter</p>
                 <img src={Logo} alt="footer logo" className="flog" />
