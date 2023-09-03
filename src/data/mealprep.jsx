@@ -10,7 +10,7 @@ export const MP=[
         minimum: "£20pp",
         location: "Ibadan",
         foodimg: "./assets/mp1.png" ,
-        avi: "./assets/avicah1.png"
+        avi: "./assets/avile1.png"
     },
     {
         id: 2,

@@ -11,7 +11,8 @@
 }
 .cah-card:hover{
     opacity: 0.3;
-    cursor: pointer
+    cursor: pointer;
+    transform: scale(0.95)
 }
 
 .cah-card{
@@ -99,14 +100,16 @@
     display: flex;
     align-items:center;
 }
-.ce-loc{
+.ce-loc,
+.oc-rev{
     color: rgba(50, 51, 53, 0.80);
     font-size: 0.625rem;
     font-style: normal;
     font-weight: 400;
 
 }
-.ce-rating{
+.ce-rating,
+.oc-rating{
     font-weight: 500;
     font-size: 14px;
 }
@@ -126,12 +129,14 @@
     border-bottom: 1px solid #ebebeb
 }
 .img-po,
- .price-pos{
+ .price-pos,
+ .c-rate-pos{
     position: absolute;
     bottom: 5em;
     right: 1em;
 }
-.price-pos{
+.price-pos,
+ .c-rate-pos{
     bottom: 9em;
     left: 1em;
     color: #fff;
@@ -146,4 +151,29 @@
     display: flex;
     justify-content: space-between;
     margin-inline: 1em;
+}
+
+.expe{
+    width: 18rem;
+    color: #6F6E6D;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 2.3em auto;
+}
+.c-rate-pos,
+.oc-nm,
+.oc-rev{
+    color: #fff;
+}
+
+.oc-rating svg{
+        color: #fcc01c
+    }
+.oc-nm{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
 }

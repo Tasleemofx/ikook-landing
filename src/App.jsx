@@ -1,5 +1,5 @@
 import React from 'react'
-// import { AppContextProvider } from './Context/SignIn'
+import { DataContextProvider } from './Context/DataContext'
 import './App.css'
 import { RouterProvider , createBrowserRouter } from "react-router-dom"
 import Homepage from "./pages/Homepage"
@@ -19,11 +19,11 @@ function App() {
   ])
  
   return (
-    // <AppContextProvider>
+    <DataContextProvider>
       <RouterProvider router={router} />
       
       
-    // </AppContextProvider>
+    </DataContextProvider>
   )
 }
 

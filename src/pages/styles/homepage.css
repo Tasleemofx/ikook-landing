@@ -11,7 +11,8 @@
         flex-wrap: wrap;
         gap: 0.625em;
     }
-.filter-nav ul li {
+.filter-nav ul li, 
+.filter-btn {
         padding: 1em;
         border-radius: 2.5rem;
         border: 1px solid #CFCFCE;
