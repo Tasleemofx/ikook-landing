@@ -27,6 +27,9 @@ footer{
     height: 2em;
     width: 10em;
 }
+.section-tw a{
+    cursor: pointer
+}
 .foot-form{
     display: flex;
     flex-direction: column;

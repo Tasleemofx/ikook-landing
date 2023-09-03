@@ -56,8 +56,38 @@ const SignUp = () => {
     <div className="signup-container">
         {error && <Message><BiErrorCircle /> {error}</Message>}
     <div className="body-f">
-        
+        <div className="img-ins">
         <img src={Image} alt="chef signup" className="mn-sg-img" />
+        <div className="sign-inst">
+                <p>We require you to have the following as a minimum requirement before applying this requirement.</p>
+            <span>
+                <p><strong>1. A valid ID Card</strong></p>
+                <p><strong>2. Certified level 2 food hygiene certification.</strong></p>
+            </span>
+            <span className="bx-fl">
+            <div className="w-box">
+                <p>It would help if you were friendly & professional.
+                    We will not tolerate or work with chefs with unpleasant attitudes towards
+                    our team or clients
+                </p>                
+            </div>
+            <div className="w-box">
+                 
+                <p>You need to be organised, punctual & always reliable. If you are
+                    taking a booking or we book you for an event or organise trials, we need
+                    to trust you without any doubt that you will attend.
+                </p>
+            </div>
+            <div className="w-box">
+                <p>
+                    Our reputation is built on the reliability of our professionals, and we guarantee
+                    our clients you attendance. You need to be a strong communicator, and we expect 
+                    prompt responses to all communications, so we know {"you're"} committed to working with us
+                </p>
+            </div>
+            </span>
+        </div>
+        </div>
     <div className="form-div">
         <nav>
             <img src={logo} alt="logo" />

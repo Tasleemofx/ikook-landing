@@ -1,4 +1,5 @@
-// import React from 'react'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Logo from "../../assets/footer-Icon.png"
 import soc from "../../assets/socialmedia.png"
 import Payment from "../../assets/payment-grp.png"
@@ -6,6 +7,7 @@ import "./footer.css"
 
 
 const Footer = () => {
+    const navigate = useNavigate()
   return (
         <footer>
             <section className="section-on">
@@ -38,7 +40,7 @@ const Footer = () => {
                 </div>
                 <div className="f-col">
                     <p className="b-f-head">Experiences</p>
-                    <a>Signup as Chef</a>
+                    <a onClick={()=> navigate("/signup")}>Signup as Chef</a>
                     <a>GIft Experience</a>
                     <a>Split Bills</a>
                     <a>Career</a>

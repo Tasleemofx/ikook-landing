@@ -76,7 +76,7 @@
 input[type="range"] {
   appearance: none;
   background-color: transparent;
-  width: 200px;
+  width: 100px;
 }
 
 .slide1::-webkit-slider-runnable-track {
@@ -154,5 +154,8 @@ input[type="range"]::-moz-range-progress {
     .f-menu-div{
         width: 53.4375rem;
         /* height: 59.0625rem; */
+    }
+    input[type="range"]{
+      width: 200px
     }
 }

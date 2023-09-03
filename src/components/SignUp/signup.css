@@ -4,12 +4,14 @@
     overflow-x: hidden;
 }
 
-.mn-sg-img{
+.img-ins{
     display: none;
 }
 
 .form-div nav{
     text-align: center;
+    margin: 1em 0;
+    margin-right: 5em;
 }
 .inp-div, .sm-div{
     display: flex;
@@ -52,13 +54,16 @@
     color: cornflowerblue;
 }
 .bool-q{
+    display: flex;
+    align-items: center;
     margin: 1em;
 }
 .bool-q span{
     margin-inline: 1em;
 }
 .yel-bd{
-    padding: 1em;
+    margin: 1em;
+    padding: 0.5em;
     border: 2px solid #fcc01c;
 }
 .agreemnt{
@@ -105,8 +110,44 @@
     margin: 2em;
 }
 @media screen and (min-width: 768px){
-    .mn-sg-img{
+    .img-ins{
     display: block;
+    position: relative;
+}
+.sign-inst{
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    border-radius: 0.625rem;
+    box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.10);
+    top: 30%;
+    left: 1em;
+    width: 34.1875rem;
+    height: 20.12425rem;
+    color: #323335;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1em;
+}
+.bx-fl{
+    display: flex;
+    justify-content: space-around;
+}
+.w-box{
+    width: 10.3125rem;
+    height: 10.02888rem;
+    flex-shrink: 0;
+    border-radius: 0.3125rem;
+    background: #FFF;
+    padding: 1em;
+}
+.w-box p{
+    color: rgba(50, 51, 53, 0.70);
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .body-f {
     display: grid;

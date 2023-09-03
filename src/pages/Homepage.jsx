@@ -1,5 +1,5 @@
 import React, { useContext, useState} from 'react'
-import Nav from '../components/Navbar/Nav'
+import Navbar from "../components/Navbar/index"
 import Footer from '../components/Footer/Footer'
 import ChefAtHome from '../components/Details/CAH'
 import "./styles/homepage.css"
@@ -25,7 +25,7 @@ const Homepage = () => {
   }
   return (
     <>
-        <Nav />
+        <Navbar />
         <nav className="filter-nav">
           <ul>
             <li onClick={()=> setCurrentData("Chef at Home")} 

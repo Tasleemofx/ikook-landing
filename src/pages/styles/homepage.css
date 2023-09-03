@@ -7,7 +7,8 @@
 
 .filter-nav ul{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
         gap: 0.625em;
     }
@@ -16,14 +17,14 @@
         padding: 1em;
         border-radius: 2.5rem;
         border: 1px solid #CFCFCE;
-        padding: 0.625em;
-        margin-inline: 1em;
+        width: 7rem;
+        height: 4em;
+        margin-inline: auto;
         list-style-type: none;
         font-style: normal;
         font-weight: 400;
-        line-height: 1rem;
         cursor: pointer;
-        font-size: 14px;
+        font-size: 10px;
     }
 .active{
     border-radius: 2.5rem;
@@ -32,11 +33,12 @@
     color: #fff;
 }
 .filter-btn{
+    width: 9rem;
     cursor: pointer
 }
 .c-book-div{
     position: relative;
-    width: 37.75rem;
+    width: 50%;
     height: 3.6875rem;
     flex-shrink: 0;
     border-radius: 2.5rem;
@@ -51,14 +53,17 @@
     border: 0;
     outline: 0;
     padding-left: 1.2em;
-    width: 25rem
+    width: 65%;
+    font-size: 0.6rem;
 }
 .c-book-div button{
     position: absolute;
+    width: 35%;
     right: 0.3rem;
     border-radius: 1.875rem;
     padding: 1em;
     color: #fff;
+    font-size: 0.6rem;
     background: #fcc01c;
     border: 0;
 }
@@ -92,10 +97,22 @@
     border-radius: 0.5rem;
 }
 @media screen and (min-width: 768px){
-
+    .filter-nav ul li,
+        .filter-btn {
+            width: auto;
+            font-size: 14px;
+            padding: 1em;
+            margin-inline: 1em;
+        }
     .c-book-div {
             position: relative;
             width: 37.75rem;
-            font-size: 13px;
+
+    }
+    .c-book-div input {
+        font-size: 0.9rem;
+    }
+    .c-book-div button{
+        font-size: 0.9rem;
     }
 }

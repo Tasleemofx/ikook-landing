@@ -6,12 +6,14 @@ import nig from "../../assets/nig.png"
 import { AiOutlineSearch } from "react-icons/ai"
 import { FiShoppingCart } from "react-icons/fi"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { BiSolidDownArrow } from "react-icons/bi"
+import { BiDownArrow, BiUpArrow } from 'react-icons/bi'
 import { IoPersonOutline} from "react-icons/io5"
 import Logo from "../../assets/logo.png"
-import "./nav.css"
+import { useNavigate } from 'react-router-dom'
+
 
 const Nav = () => {
+  const navigate = useNavigate()
   const [edition, setEdition] = useState({name: "Canada", "flag": canada})
   const [openDropdown, setOpenDropdown] = useState(false)
   const [hideBar, setHideBar] = useState(false)
@@ -24,27 +26,39 @@ const Nav = () => {
   return (
         <nav className="main-nav">
           <img src={Logo} alt="main-logo" className="main-logo"/>
-              <span className={!hideBar?"nav-form hide":"nav-form"}>
+             <span className={!hideBar?"nav-line hide":"nav-line"}>
+              <span className="nav-form">               
                 <form className="form-only">
                     <input type="text" placeholder="Location" />
-                    <input type="text" placeholder="Event Date" />
+                    <input type="date" placeholder="Event Date" />
                     <input type="text" placeholder="Guest" />
                     <button><AiOutlineSearch />Search</button>
                 </form>
               </span>
-            <span className="nav-line">
               <FiShoppingCart />
               <a>Login</a>
               <div className="nav-end">
                 <div className="rounded-d">
                   <IoPersonOutline className="g-r" />
                   <GiHamburgerMenu onClick={()=> setHideBar(!hideBar)}/>
+                  {
+                    hideBar && <div className="sing-in-modal">
+                      <span className="sing-in-item" >Signup as Customer</span>
+                      <span  className="sing-in-item" onClick ={()=> navigate("/signup")}>Sign up as Chef</span>
+                      <span className="sing-in-item" >Services</span>
+                      <span className="sing-in-item" >How it Works</span>
+                      <span className="sing-in-item" >Gift</span>
+
+
+
+                    </div>
+                  }
                 </div>
               <span className={openDropdown?"edition opd":"edition"} 
               onClick={()=> setOpenDropdown(!openDropdown)}>
                 <img src={edition.flag} alt="country" className="country" 
                 onClick={()=> setEdition(edition)} />
-                {!openDropdown && <BiSolidDownArrow />}
+                {!openDropdown? <BiDownArrow />: <BiUpArrow/>}
                 {
                   openDropdown && <ul className="countries-div">
                     {
