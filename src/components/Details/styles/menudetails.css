@@ -4,27 +4,29 @@
     width: 95vw;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20.5rem, auto));
-    grid-auto-rows: 25.7rem;
+    grid-template-columns: repeat(auto-fit, minmax(19.3rem, auto));
+    grid-auto-rows: 24.7rem;
     margin: 1em auto 2em auto;
     overflow: hidden
 }
+.cah-card:hover{
+    opacity: 0.3;
+    cursor: pointer
+}
 
 .cah-card{
-    width: 20.5rem;
-    height: 20.6875rem;
     box-shadow: 0px 4.94185px 4.94185px 0px rgba(0, 0, 0, 0.04);
     position: relative;
     margin: 2em auto;
+    border-radius: 15px;
 }
 .cah-img{
-    width: 20.5rem;
-    height: 16.0625rem;
+    width: 19.3rem;
 }
     .cah-heart{
         position: absolute;
         top: 0.3em;
-        right: -1em;
+        right: 0.5em;
         color: #fff;
         font-size: 1.6em;
         font-weight: 700;
@@ -42,10 +44,15 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        width: 4.4375rem;
+        height: 1.4375rem;
+    }
+    .m-up{
+        position: relative;
+        bottom: 3em;
     }
 .namenpr{
-    position: relative;
-    bottom: 3em;
+
     margin: 1em;
     display: flex;
     align-items: center;
@@ -63,4 +70,80 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1.5rem;
+}
+.cah-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 1em;
+}
+.cah-desc svg{
+    color: #fcc01c
+}
+.cah-det{
+    display: flex;
+    gap: 5px;
+}
+.ce-det{
+    display: flex;
+    flex-direction: column;
+    width:7.7rem
+}
+.ce-nm{
+    color: #323335;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+}
+.desc-flex{
+    display: flex;
+    align-items:center;
+}
+.ce-loc{
+    color: rgba(50, 51, 53, 0.80);
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+
+}
+.ce-rating{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* large events mobile */
+
+.event-dets{
+    margin-top: 2em;
+    background: red;
+}
+.event-dets svg{
+    color: #fcc01c;
+}
+.event-dets .f-col{
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ebebeb
+}
+.img-po,
+ .price-pos{
+    position: absolute;
+    bottom: 5em;
+    right: 1em;
+}
+.price-pos{
+    bottom: 9em;
+    left: 1em;
+    color: #fff;
+    font-size: 0.875rem;
+}
+.low-desc{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.mp-desc{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 1em;
 }

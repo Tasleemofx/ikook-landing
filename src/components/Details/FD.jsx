@@ -4,7 +4,7 @@ import { IoLocationSharp } from "react-icons/io5"
 import { chefatHome } from "../../data/chefathome"
 import "./styles/menudetails.css"
 
-const ChefatHome = () => {
+const FineDining = () => {
 
     const [data, setData] = useState(chefatHome)
     const [filterable, setFilterable] = useState(chefatHome)
@@ -43,4 +43,4 @@ const ChefatHome = () => {
   )
 }
 
-export default ChefatHome
+export default FineDining

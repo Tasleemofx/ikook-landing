@@ -3,7 +3,14 @@ import Nav from '../components/Navbar/Nav'
 import Footer from '../components/Footer/Footer'
 import ChefAtHome from '../components/Details/CAH'
 import "./styles/homepage.css"
+import { MdKeyboardArrowDown } from "react-icons/md"
 import Filter from '../components/Filtermenu/Filter'
+import LargeEvent from '../components/Details/LE'
+import MealPrep from '../components/Details/MP'
+import GourmetDelivery from '../components/Details/GD'
+import CookingClass from '../components/Details/CC'
+import FineDining from '../components/Details/FD'
+import CorporateDining from '../components/Details/CD'
 
 
 const Homepage = () => {
@@ -44,12 +51,22 @@ const Homepage = () => {
           onChange={(e)=> setCustomBookings(e.target.value)} value={customBookings} />
           <button className="cb-btn">Custom Booking</button>
         </div>
-        <div>
+        <div className="head-pop">
           <h3>{currentData}</h3>
-          
+          <button className="most-pop">Most Popular <MdKeyboardArrowDown/> </button>
         </div>
         { openFilter && <Filter setOpenFilter={setOpenFilter}/>}
-        {<ChefAtHome currentData={currentData}/>}
+        {currentData === "Chef at Home" ? <ChefAtHome />:
+        currentData === "Large Event" ? <LargeEvent  />:
+        currentData === 'Meal Prep'? <MealPrep /> : 
+        currentData === "Gourmet Delivery"? <GourmetDelivery/>: 
+        currentData === "Cooking Class"? <CookingClass/>: 
+        currentData === "Fine Dining"? <FineDining /> :
+        currentData === "Corporate Dining"? <CorporateDining />: ""}
+        <section className="btn-mo">
+          <button className="l-mo">Load more</button>
+        </section>
+        
         <Footer/>
     </>
   )

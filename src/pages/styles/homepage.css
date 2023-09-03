@@ -61,7 +61,35 @@
     background: #fcc01c;
     border: 0;
 }
-
+.head-pop{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em;
+}
+.head-pop h3{
+    color: #060605;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.375rem;
+}
+.most-pop{
+    border-radius: 2.5rem;
+    border: 1px solid #CFCFCE;
+    background: #fff;
+    padding: 0.3em
+}
+.btn-mo{
+    text-align: center;
+}
+.l-mo{
+    margin: 1em auto;
+    color: #fff;
+    background: #fcc01c;
+    padding: 0.7em;
+    border: 0;
+    border-radius: 0.5rem;
+}
 @media screen and (min-width: 768px){
 
     .c-book-div {
