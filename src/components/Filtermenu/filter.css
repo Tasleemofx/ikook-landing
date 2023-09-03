@@ -76,7 +76,7 @@
 input[type="range"] {
   appearance: none;
   background-color: transparent;
-  width: 100px;
+  width: 150px;
 }
 
 .slide1::-webkit-slider-runnable-track {
