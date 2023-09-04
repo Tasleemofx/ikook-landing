@@ -1,3 +1,6 @@
+.s-u-logo{
+    cursor: pointer
+}
 .signup-container{
     position: relative;
     width: 100%;
@@ -17,7 +20,8 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    border: 1.5px solid #3233354D;;
+    border: 2px solid #3233354D;
+    border-radius: 5px;
     margin-bottom: 1.5em;
     position: relative;
     align-content: center;
@@ -40,6 +44,8 @@
     height: 3em;
     width: 80%;
     margin-bottom: 1.5em;
+    border: 2px solid #3233354D;
+    border-radius: 5px;
 }
 
 .form-outline label{
@@ -159,26 +165,23 @@
     height: 2.5em;
     width: 80%;
 }
-.sm-bx {
-    display: flex;
-    gap: 15px;
-}
+.sm-bx ,
 .flex-bg{
     display: flex;
-    gap: 8px;
+    gap: 0.7em;
 }
 
 .sm-bx select{
-    width: 39.5%;
+    width: 39%;
 }
 
 .sm-div{
-    width: 39.5%;
+    width: 39%;
     margin-bottom:1em;
     
 }
 
 .s-u-btn{
-        margin-inline: 1em;
+        margin-inline: 4em;
 }
 }

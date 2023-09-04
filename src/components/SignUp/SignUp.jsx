@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 import Image from "../../assets/signup image.png"
 import { BiErrorCircle } from "react-icons/bi"
+import { useNavigate } from 'react-router-dom'
 import { MdOutlineCheckBoxOutlineBlank} from "react-icons/md"
 import { IoMdCheckbox} from "react-icons/io"
 import { Message } from '../styled/Message';
 import "./signup.css"
 
 const SignUp = () => {
-
+    const navigate = useNavigate()
     const [formvalues, setFormvalues] = useState({})
     const [error, setError] = useState()
 
@@ -89,7 +90,7 @@ const SignUp = () => {
         </div>
         </div>
     <div className="form-div">
-        <nav>
+        <nav onClick={()=> navigate("/")} className="s-u-logo">
             <img src={logo} alt="logo" />
             <p>Signup as a Chef</p>
         </nav>
