@@ -24,7 +24,7 @@ const Nav = () => {
     {name: "Nigeria",flag:  nig}])
 
   return (
-        <nav className="main-nav">
+        <nav className="main-nav pad1">
           <img src={Logo} alt="main-logo" className="main-logo"/>
              <span className={!hideBar?"nav-line hide":"nav-line"}>
               <span className="nav-form">               
@@ -35,9 +35,11 @@ const Nav = () => {
                     <button><AiOutlineSearch />Search</button>
                 </form>
               </span>
-              <FiShoppingCart />
-              <a>Login</a>
+              <div>
+              
               <div className="nav-end">
+                <FiShoppingCart />
+                <a>Login</a>
                 <div className="rounded-d">
                   <IoPersonOutline className="g-r" />
                   <GiHamburgerMenu onClick={()=> setHideBar(!hideBar)}/>
@@ -58,7 +60,7 @@ const Nav = () => {
               onClick={()=> setOpenDropdown(!openDropdown)}>
                 <img src={edition.flag} alt="country" className="country" 
                 onClick={()=> setEdition(edition)} />
-                {!openDropdown? <BiDownArrow />: <BiUpArrow/>}
+               
                 {
                   openDropdown && <ul className="countries-div">
                     {
@@ -73,6 +75,7 @@ const Nav = () => {
                 }
                 
               </span>
+              </div>
               </div>
             </span>
         </nav>

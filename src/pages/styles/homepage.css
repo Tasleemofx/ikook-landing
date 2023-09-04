@@ -12,19 +12,24 @@
         flex-wrap: wrap;
         gap: 0.625em;
     }
-.filter-nav ul li, 
-.filter-btn {
+.filter-nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
         padding: 1em;
         border-radius: 2.5rem;
         border: 1px solid #CFCFCE;
         width: 7rem;
         height: 4em;
         margin-inline: auto;
-        list-style-type: none;
-        font-style: normal;
-        font-weight: 400;
-        cursor: pointer;
+        color: var(--black-800, #060605);
+        font-family: Poppins;
         font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        cursor: pointer;
     }
 .active{
     border-radius: 2.5rem;
@@ -32,10 +37,7 @@
     background: #FCC01C;
     color: #fff;
 }
-.filter-btn{
-    width: 9rem;
-    cursor: pointer
-}
+
 .c-book-div{
     position: relative;
     width: 50%;
@@ -69,12 +71,13 @@
 }
 .head-pop{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: 1em 2em;
 }
 .head-pop h3{
     color: #060605;
-    font-size: 2.25rem;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: 2.375rem;
@@ -97,18 +100,30 @@
     border-radius: 0.5rem;
 }
 @media screen and (min-width: 768px){
-    .filter-nav ul li,
-        .filter-btn {
-            width: auto;
-            font-size: 12px;
-            padding: 1em;
+    .filter-nav,
+    .filter-nav ul{
+        justify-content: space-between;
+    }
+    .filter-nav ul li {
+            
+            padding: 0;
+            font-size: 1rem;
+            padding: 0.75em;
             margin-inline: 1em;
+            align-items: center;
         }
     .c-book-div {
             position: relative;
             width: 37.75rem;
 
     }
+        .head-pop h3 {
+            color: #060605;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 2.375rem;
+        }
     .c-book-div input {
         font-size: 0.9rem;
     }

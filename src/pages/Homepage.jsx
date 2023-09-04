@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer'
 import ChefAtHome from '../components/Details/CAH'
 import "./styles/homepage.css"
 import { MdKeyboardArrowDown } from "react-icons/md"
-import { BsFunnel } from "react-icons/bs"
+import { IoFunnelOutline } from "react-icons/io5"
 import Filter from '../components/Filtermenu/Filter'
 import LargeEvent from '../components/Details/LE'
 import MealPrep from '../components/Details/MP'
@@ -26,7 +26,7 @@ const Homepage = () => {
   return (
     <>
         <Navbar />
-        <nav className="filter-nav">
+        <nav className="filter-nav pad1">
           <ul>
             <li onClick={()=> setCurrentData("Chef at Home")} 
             className={currentData ==="Chef at Home"? "active":""}>Chef at Home</li>
@@ -44,18 +44,20 @@ const Homepage = () => {
             className={currentData ==="Corporate Dining"? "active":""}>Corporate Dining</li>
             <li onClick={()=> setCurrentData("Our Chefs")} 
             className={currentData ==="Our Chefs"? "active":""}>CHEFS</li>
+            <li onClick={handleFilter}>Filter <IoFunnelOutline/></li>
           </ul>
           <hr/>
-          <span onClick={handleFilter} className="filter-btn">Filter <BsFunnel/></span>
+          
         </nav>
 
-        <div className="c-book-div">
+       
+        <div className="head-pop pad1">
+          <h3>{currentData}</h3>
+           <div className="c-book-div">
           <input type="text" placeholder="Can't find what you want? use custom bookings"
           onChange={(e)=> setCustomBookings(e.target.value)} value={customBookings} />
           <button className="cb-btn">Custom Booking</button>
         </div>
-        <div className="head-pop">
-          <h3>{currentData}</h3>
           <button className="most-pop">Most Popular <MdKeyboardArrowDown/> </button>
         </div>
         { openFilter && <Filter setOpenFilter={setOpenFilter} currentData={currentData}/>}

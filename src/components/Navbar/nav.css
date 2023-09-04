@@ -11,6 +11,7 @@
 }
 .main-nav{
     display: none;
+    margin: 1em 0; 
 }
 .mob-nav{
     display: flex;
@@ -153,6 +154,7 @@
             width: 7.25rem;
             height: 2.42563rem;
             flex-shrink: 0;
+            padding-left: 1em;
         }
 .main-nav {
         margin-top: 1em;
@@ -163,14 +165,13 @@
         position: sticky;
         top: 0;
         z-index: 10;
-        padding: 1em;
         background: #FFF;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     }
     .nav-line {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         gap: 20px;
         }
@@ -178,8 +179,7 @@
     .nav-end {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        width: 20vw;
+        gap: 1em;
     }
         .form-only{
             display: flex;
@@ -236,7 +236,7 @@
             display: flex;
             align-items: center;
             gap: 3px;
-            box-shadow: 0px 5px 5px 0px #ebebeb;
+            /* box-shadow: 0px 5px 5px 0px #ebebeb; */
             position: relative;
         }
         .countries-div {
