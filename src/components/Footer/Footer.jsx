@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import Logo from "../../assets/foot-Icon.png"
+import Logo from "../../assets/foot-icon.png"
 import soc from "../../assets/socialmedia.png"
 import Payment from "../../assets/payment-grp.png"
 import "./footer.css"
