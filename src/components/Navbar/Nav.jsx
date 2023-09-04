@@ -6,15 +6,13 @@ import nig from "../../assets/nig.png"
 import { AiOutlineSearch } from "react-icons/ai"
 import { FiShoppingCart } from "react-icons/fi"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { BiDownArrow, BiUpArrow } from 'react-icons/bi'
-import { IoPersonOutline} from "react-icons/io5"
 import Logo from "../../assets/logo.png"
 import { useNavigate } from 'react-router-dom'
 
 
 const Nav = () => {
   const navigate = useNavigate()
-  const [edition, setEdition] = useState({name: "Canada", "flag": canada})
+  const [edition, setEdition] = useState({name:"United Kingdom", "flag": uk})
   const [openDropdown, setOpenDropdown] = useState(false)
   const [hideBar, setHideBar] = useState(false)
   const [countries, setCountries] = useState([
@@ -41,7 +39,9 @@ const Nav = () => {
                 <FiShoppingCart />
                 <a>Login</a>
                 <div className="rounded-d">
-                  <IoPersonOutline className="g-r" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                  <path d="M16.922 17.5V15.8333C16.922 14.9493 16.5708 14.1014 15.9456 13.4763C15.3205 12.8512 14.4727 12.5 13.5886 12.5H6.92196C6.0379 12.5 5.19005 12.8512 4.56493 13.4763C3.93981 14.1014 3.58862 14.9493 3.58862 15.8333V17.5M13.5886 5.83333C13.5886 7.67428 12.0962 9.16667 10.2553 9.16667C8.41434 9.16667 6.92196 7.67428 6.92196 5.83333C6.92196 3.99238 8.41434 2.5 10.2553 2.5C12.0962 2.5 13.5886 3.99238 13.5886 5.83333Z" stroke="#FCC01C" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                   <GiHamburgerMenu onClick={()=> setHideBar(!hideBar)}/>
                   {
                     hideBar && <div className="sing-in-modal">

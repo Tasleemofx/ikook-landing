@@ -10,9 +10,9 @@
     overflow: hidden
 }
 .cah-card:hover{
-    opacity: 0.3;
+    opacity: 0.9;
     cursor: pointer;
-    transform: scale(0.95)
+    transform: scale(1.1)
 }
 
 .cah-card{
@@ -91,6 +91,9 @@
     width:7.7rem
 }
 .ce-nm{
+    display: flex;
+    gap: 3px;
+    align-items: center;
     color: #323335;
     font-size: 0.75rem;
     font-style: normal;
@@ -99,6 +102,7 @@
 .desc-flex{
     display: flex;
     align-items:center;
+    gap: 5px;
 }
 .ce-loc,
 .oc-rev{
@@ -106,12 +110,17 @@
     font-size: 0.625rem;
     font-style: normal;
     font-weight: 400;
-
+    display: flex;
+    gap: 3px;
+    align-items: center;
 }
 .ce-rating,
 .oc-rating{
     font-weight: 500;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
 
 /* large events mobile */

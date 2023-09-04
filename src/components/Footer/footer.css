@@ -78,7 +78,8 @@
 }
 .section-on{
     margin-top: 2em;
-    justify-content: flex-start;
+    margin-left: 1em;
+    align-items: flex-start;
 }
 .section-tw{
     display: grid;
@@ -115,8 +116,8 @@
 }
 
 .foot-form button{
-    height: 3.75rem;
-    width: 12em;
+    /* height: 3.75rem; */
+    width: 15em;
     padding: 1em;
 }
 }
