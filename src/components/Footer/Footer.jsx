@@ -24,7 +24,7 @@ const Footer = () => {
                 </form>
                 <section className="section-th">
                 <div className="f-col">
-                    <p className="b-f-head">iKooK</p>
+                    <p>iKooK</p>
                     <a>About us</a>
                     <a>How it works</a>
                     <a>FAQs</a>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <a>Terms & Condition</a>
                 </div>
                 <div className="f-col">
-                    <p className="b-f-head">Services</p>
+                    <p>Services</p>
                     <a>Chef at Home</a>
                     <a>Large Events</a>
                     <a>Meal Prep</a>
@@ -40,7 +40,7 @@ const Footer = () => {
                     <a>More +</a>
                 </div>
                 <div className="f-col">
-                    <p className="b-f-head">Experiences</p>
+                    <p>Experiences</p>
                     <a onClick={()=> navigate("/signup")}>Signup as Chef</a>
                     <a>Gift Experience</a>
                     <a>Split Bills</a>
@@ -49,7 +49,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <div className="f-col">
-                        <p className="b-f-head">Contact Us</p>
+                        <p>Contact Us</p>
                         <a>+44 203 807 8500</a>
                         <a>team@ikook.co.uk</a>
                         <a>Support</a>

@@ -53,9 +53,10 @@
     padding: 0.5em 0;
     cursor: pointer;
 }
-.b-f-head{
+.section-th .f-col *:first-child{
     font-size: 1.25rem;
     font-weight: 500;
+    cursor: pointer;
 }
 .cpy-wr{
     color: #323335;

@@ -14,7 +14,16 @@ const ChefatHome = () => {
         {data?.map(({menuName, price, chef, location, averageReviews, totalReviews, cuisine, image, id, avatar})=>{
             return(
                 <div key={id} className="cah-card">
-                    <AiOutlineHeart className='cah-heart'/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className='cah-heart'>
+                    <g clipPath="url(#clip0_492_669)">
+                        <path d="M3 12C0.75 9 1.5 4.5 5.25 3C9 1.5 11.25 4.5 12 6C12.75 4.5 15.75 1.5 19.5 3C23.25 4.5 23.25 9 21 12C18.75 15 12 21 12 21C12 21 5.25 15 3 12Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_492_669">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                    </svg>
                     <span className="cah-cuisine">{cuisine}</span>
                     <img src={image} alt="imagefile" className='cah-img'/>
                     <span className="m-up">
