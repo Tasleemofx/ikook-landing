@@ -14,7 +14,7 @@
     }
 .filter-nav ul li {
         list-style-type: none;
-        display: inline-block;
+        display: flex;
         align-items: center;
         text-align: center;
         justify-content: space-between;
@@ -24,8 +24,7 @@
         width: 7rem;
         height: 4em;
         margin-inline: auto;
-        color: var(--black-800, #060605);
-        font-family: Poppins;
+        color: #060605;
         font-size: 10px;
         font-style: normal;
         font-weight: 500;
@@ -36,7 +35,7 @@
     border-radius: 2.5rem;
     border: 2px solid #F9DF98;
     background: #FCC01C;
-    color: #fff;
+    color:white !important
 }
 .fi-li{
     padding-left: 1em;
@@ -107,14 +106,21 @@
 @media screen and (min-width: 768px){
     .filter-nav,
     .filter-nav ul{
-        /* justify-content: ; */
+        justify-content: space-between;
     }
     .filter-nav ul li {
             padding: 0.5em;
             font-size: 0.7rem;
+            font-weight: 500;
             margin-inline: 1em;
             align-items: center;
             justify-content: center;
+        }
+        .active {
+            border-radius: 2.5rem;
+            border: 2px solid #F9DF98;
+            background: #FCC01C;
+            color: white
         }
     .c-book-div {
             position: relative;
