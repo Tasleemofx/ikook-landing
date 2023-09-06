@@ -7,7 +7,8 @@
     grid-template-columns: repeat(auto-fit, minmax(19.3rem, auto));
     grid-auto-rows: 24.7rem;
     margin: 1em auto 2em auto;
-    overflow: hidden
+    overflow: hidden;
+    cursor: pointer;
 }
 .cah-card:hover{
     box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.17);
@@ -144,16 +145,21 @@
 }
 .price-pos,
  .c-rate-pos{
-    bottom: 9em;
+    bottom: 8.2em;
     left: 1em;
     color: #fff;
     font-size: 0.875rem;
 }
 .low-desc{
-    width: 70%;
+    width: 85%;
     padding-inline: 1em;
     display: flex;
     justify-content: space-between;
+    color: rgba(50, 51, 53, 0.70);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .mp-desc{
     display: flex;

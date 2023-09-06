@@ -18,7 +18,7 @@
         align-items: center;
         text-align: center;
         justify-content: space-between;
-        padding: 0.5em;
+        /* padding: 0.5em; */
         border-radius: 2.5rem;
         border: 1px solid #CFCFCE;
         width: 7rem;
@@ -31,16 +31,18 @@
         line-height: 1.5rem;
         cursor: pointer;
     }
+    .filt-btn{
+        display: flex;
+        align-items: center;
+        gap: 0.5em
+    }
 .active{
     border-radius: 2.5rem;
     border: 2px solid #F9DF98;
     background: #FCC01C;
     color:white !important
 }
-.fi-li{
-    padding-left: 1em;
-    border-left: 1px solid #000;
-}
+
 
 .c-book-div{
     position: relative;
@@ -87,10 +89,15 @@
     line-height: 2.375rem;
 }
 .most-pop{
+    display: flex;
+    align-items: center;
     border-radius: 2.5rem;
     border: 1px solid #CFCFCE;
     background: #fff;
     padding: 0.3em
+}
+.most-pop svg{
+    padding-left: 3px
 }
 .btn-mo{
     text-align: center;
@@ -116,6 +123,7 @@
             align-items: center;
             justify-content: center;
         }
+   
         .active {
             border-radius: 2.5rem;
             border: 2px solid #F9DF98;
