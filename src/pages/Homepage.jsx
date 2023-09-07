@@ -45,12 +45,13 @@ const Homepage = () => {
             <li onClick={()=> setCurrentData("Our Chefs")} 
             className={currentData ==="Our Chefs"? "active":""}>CHEFS</li>
             
-            <li onClick={handleFilter} className="filt-btn">
-              <span>Filter</span>
-              <IoFunnelOutline/>
-            </li>
+            
           </ul>
           
+          <button onClick={handleFilter} className="filt-btn">
+              <span>Filter</span>
+              <IoFunnelOutline/>
+            </button>
         </nav>
 
        

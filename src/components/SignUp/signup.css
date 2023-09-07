@@ -13,18 +13,32 @@
 
 .form-div nav{
     text-align: center;
-    margin: 1em 0;
-    margin-right: 5em;
+    display: block;
+    margin: 2em auto;
+}
+.form-div nav img{
+    margin: 1em;
+}
+.form-div nav p{
+    color:  #323335;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .inp-div, .sm-div{
     display: flex;
     flex-direction: column;
     width: 80%;
-    border: 2px solid #3233354D;
-    border-radius: 5px;
+    border: 1.5px solid rgba(50, 51, 53, 0.30);
     margin-bottom: 1.5em;
     position: relative;
     align-content: center;
+    color: rgba(50, 51, 53, 0.50);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .form-outline{
     display: block;
@@ -36,21 +50,20 @@
     height: inherit;
     outline: 0;
     border: 0;
-    margin: 1em 0;
+    margin: 1.5em 0;
     border-radius: 0;
     padding-left: 0.5em;
 }
 .form-outline select{
-    height: 3em;
     width: 80%;
+    height: 3.75rem;
     margin-bottom: 1.5em;
-    border: 2px solid #3233354D;
-    border-radius: 5px;
+    border: 1.5px solid rgba(50, 51, 53, 0.30);
 }
 
 .form-outline label{
     position: absolute;
-    top: 0.4em;
+    top: 1em;
     left: 0.5em;
 }
 .form-outline input:focus+label,
@@ -62,15 +75,40 @@
 .bool-q{
     display: flex;
     align-items: center;
-    margin: 1em;
+    justify-content: space-between;
+    margin: 1em 0;
+    color: #323335;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 80%;
 }
-.bool-q span{
-    margin-inline: 1em;
+.bool-q div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+}
+.und{
+    text-decoration: underline;
+}
+.yel-bd, 
+.wh-bd{
+    margin: 1em;
+    padding: 1em;
+    width: 4rem;
+    height: 3.125rem;
+    color: #323335;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
 }
 .yel-bd{
-    margin: 1em;
-    padding: 0.5em;
-    border: 2px solid #fcc01c;
+    border: 2px solid var(--Primary-Colour, #FCC01C);
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.15);
 }
 .agreemnt{
     font-size: 12px;
@@ -78,7 +116,6 @@
     line-height: 25px;
     letter-spacing: 0em;
     text-align: left;
-    width: 80%;
 }
 .alr{
     margin: 1em auto;
@@ -86,34 +123,39 @@
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: left;
-    width: 60%;
 }
 .alr a,
 .alr a:visited{
     color: #fcc01c;
 }
 .spbx-f{
-    display: flex;
-    align-items: center;
-}
+    display: block;
+    text-align: center;
+    margin: 2em auto
+    }
 .spbx-f svg{
-    width: 2em;
-    height: 2em;
-    font-weight: bold;
+    font-size: 1.56rem;
+    font-weight: 800;
     color: #fcc01c;
 }
 .sl{
     background: #fcc01c;
 }
 .s-u-btn{
-    display: block;
     background: #fcc01c;
     border: 0;
     border-radius: 5px;
-    height: 3em;
-    width: 60%;
-    margin: 2em;
+    width: 30.875rem;
+    height: 3.75rem;
+    color: #fff;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+.btn-sub-for{
+    text-align: center;
 }
 @media screen and (min-width: 768px){
     .img-ins{
@@ -125,7 +167,7 @@
     background: rgba(255,255,255,0.8);
     border-radius: 0.625rem;
     box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.10);
-    top: 30%;
+    top: 45%;
     left: 1em;
     width: 34.1875rem;
     height: 20.12425rem;
@@ -138,7 +180,8 @@
 }
 .bx-fl{
     display: flex;
-    justify-content: space-around;
+    gap:0.3rem;
+    margin-inline: auto;
 }
 .w-box{
     width: 10.3125rem;
@@ -158,26 +201,29 @@
 .body-f {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 2px;
 }
 .inp-div,
 .sm-div {
-    height: 3em;
-    width: 80%;
+    width: 44.87488rem;
+    height: 3.75rem;
+    flex-shrink: 0;
 }
 .sm-bx ,
 .flex-bg{
     display: flex;
-    gap: 0.7em;
+    gap: 1.2rem
 }
 
 .sm-bx select{
-    width: 39%;
-    height: 3.5em
+    width: 21.83863rem;
+    height: 3.75rem;
 }
 
 .sm-div{
-    width: 39%;
+    width: 21.83863rem;
+    height: 3.75rem;
+    flex-shrink: 0;
     margin-bottom:1em;
     
 }

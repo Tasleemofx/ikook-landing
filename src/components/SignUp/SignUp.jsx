@@ -152,13 +152,17 @@ const SignUp = () => {
             </span>
             <div className="bool-q" >
                 <p>Do you have right to work in this country?</p>
-                <span  className={ formvalues.right_to_work? "yel-bd": ""} onClick={()=> setFormvalues({...formvalues, right_to_work: true})}>Yes</span>
-                <span className={ !formvalues.right_to_work? "yel-bd": ""}  onClick={()=> setFormvalues({...formvalues, right_to_work: false})}>No</span>
+                <div>
+                    <span  className={ formvalues.right_to_work? "yel-bd": "wh-bd"} onClick={()=> setFormvalues({...formvalues, right_to_work: true})}>Yes</span>
+                    <span className={ !formvalues.right_to_work? "yel-bd": "wh-bd"}  onClick={()=> setFormvalues({...formvalues, right_to_work: false})}>No</span>
+                </div>
             </div>
             <div className="bool-q" >
                 <p>Do you have any criminal record?</p>
-                <span  className={ formvalues.criminal_record? "yel-bd": ""}  onClick={()=> setFormvalues({...formvalues, criminal_record: true})}>Yes</span>
-                <span className={ !formvalues.criminal_record? "yel-bd": ""}   onClick={()=> setFormvalues({...formvalues, criminal_record: false})}>No</span>
+                <div>
+                    <span  className={ formvalues.criminal_record? "yel-bd": "wh-bd"}  onClick={()=> setFormvalues({...formvalues, criminal_record: true})}>Yes</span>
+                    <span className={ !formvalues.criminal_record? "yel-bd": "wh-bd"}   onClick={()=> setFormvalues({...formvalues, criminal_record: false})}>No</span>
+                </div>
             </div>
             <select onChange={(e)=> setFormvalues({...formvalues, reference: e.target.value})}>
                 <option default>How did you hear about us?</option>
@@ -168,11 +172,12 @@ const SignUp = () => {
                 <option value="Others">Others</option>
             </select>
             <section className="agreemnt">
-            <span>By proceeding, I agree to {`iKooK's`} Terms and Conditions and acknowledge that I have read the Privacy Policy.</span>
+            <span>By proceeding, I agree to {`iKooK's`} <span className="und">Terms and Conditions</span> and acknowledge that I have read the <span className="und">Privacy Policy</span>.</span>
 
             <p>I also agree that iKooK or its representatives may contact me by email, phone, or SMS (including by automated means) at the email address or number I provide, including for marketing purposes.</p>
             
             <div className="spbx-f">
+                
                 {formvalues.accept_terms ? 
                 <IoMdCheckbox onClick={()=> setFormvalues({...formvalues, accept_terms: !formvalues.accept_terms})}/>:
                 <MdOutlineCheckBoxOutlineBlank onClick={()=> setFormvalues({...formvalues, accept_terms: !formvalues.accept_terms})}/>}
@@ -180,10 +185,13 @@ const SignUp = () => {
             <span className="alr">Keep me updated with special offers, exciting products and news from iKooK.</span>
             </div>
             </section>
+            <div className="btn-sub-for">
             <button type="submit" className="s-u-btn" onClick={(e)=>handleSubmit(e)}>Sign Up</button> 
+            <p className="alr" >Already have an account? <a href="/">Sign In</a></p>
+            </div>
             </div>
         </form>
-        <p className="alr" >Already have an account? <a href="/">Sign In</a></p>
+        
     </div>
     </div>
     </div>

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import Logo from "../../assets/foot-icon.png"
 import soc from "../../assets/socialmedia.png"
 import Payment from "../../assets/payment-grp.png"
+import { BsArrowRightShort } from "react-icons/bs"
 import "./footer.css"
 
 
@@ -55,7 +56,7 @@ const Footer = () => {
                     <a>Nigeria</a>
                     <a>Canada</a>
                     <a>South Africa</a>
-                    <a>See Others</a>
+                    <a className="a-f-btn">See Other Countries <BsArrowRightShort/></a>
                 </div>
                 <div>
                     <div className="f-col">

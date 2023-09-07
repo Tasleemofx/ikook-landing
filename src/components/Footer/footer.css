@@ -1,6 +1,5 @@
 .m-foot{
     background: #fcc01c;
-    text-align: center;
     color: #000;
 }
 
@@ -27,9 +26,7 @@
     height: 2em;
     width: 10em;
 }
-.section-tw a{
-    cursor: pointer
-}
+
 .foot-form{
     display: flex;
     flex-direction: column;
@@ -66,15 +63,21 @@
     font-weight: 400;
     line-height: normal;
 }
-
+.a-f-btn{
+    border: 1px solid black;
+    border-radius: 2.5rem;
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    align-items: center;
+    gap: 0.25rem;
+}
 @media screen and (min-width: 768px){
 .m-foot{
     display: grid;
     grid-template-areas: 
     "nav nav nav nav"
     "logo logo list list"
-    "logo logo list list"
-    "cpr cpr . .";
+    "cpr cpr list list";
 }
 .cpy-wr{
     grid-area: cpr;
@@ -97,26 +100,23 @@
 .section-tw{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1em;
+    gap: 3rem;
+    margin: 3em 1em;
     grid-area: logo
 }
 .section-th{
     display: flex;
-    /* align-items: flex-start; */
+    align-items: flex-start;
     gap: 5.25rem;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 1em 0;
-    color: #000;
-    text-align: justify;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    /* width: max-content */
 }
-.section-th p,
+/* .section-th p, */
 .section-th a{
     margin-top: 1em;
+    cursor: pointer;
+    
 }
 
 .foot-form{

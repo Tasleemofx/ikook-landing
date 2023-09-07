@@ -6,7 +6,7 @@ import "./nav.css"
 const index = () => {
   return (
     <>
-        <Navmobile/>
+        {/* <Navmobile/> */}
         <Nav/>
     </>
   )
