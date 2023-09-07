@@ -12,16 +12,18 @@ const Footer = () => {
         <footer className="m-foot pad1">
             <section className="section-on">
                 <p className="big-join">Join our Newsletter</p>
-                <img src={Logo} alt="footer logo" className="flog" />
-                <img src={soc} alt="social media" className="soc"/>
-                <p className="cpy-wr">Copyright &copy; 2023 iKooK. All rights reserved</p>
-            </section>
-            <section className="section-tw">
                 <form className="foot-form">
                     <input type="text" placeholder="Enter your name" className="nam-inp"/>
                     <input type="text" placeholder="Enter Email to join our Newsletter" className="mai-inp" />
                     <button type="submit" className="subscribe">Subscribe</button>
                 </form>
+                
+                
+            </section>
+            <section className="section-tw">
+                <img src={Logo} alt="footer logo" className="flog" />
+                <img src={soc} alt="social media" className="soc"/>
+            </section>
                 <section className="section-th">
                 <div className="f-col">
                     <p>iKooK</p>
@@ -47,6 +49,14 @@ const Footer = () => {
                     <a>Career</a>
                     <a>Blog</a>
                 </div>
+                <div className="f-col">
+                    <p>iKooK Chef in</p>
+                    <a>United Kingdom</a>
+                    <a>Nigeria</a>
+                    <a>Canada</a>
+                    <a>South Africa</a>
+                    <a>See Others</a>
+                </div>
                 <div>
                     <div className="f-col">
                         <p>Contact Us</p>
@@ -57,9 +67,9 @@ const Footer = () => {
                     <img src={Payment} alt="payment icons" />
                 </div>
                 </section>
-            </section>
             
-
+            
+            <p className="cpy-wr">Copyright &copy; 2023 iKooK. All rights reserved</p>
 
         </footer>
   )
