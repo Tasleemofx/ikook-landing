@@ -28,7 +28,7 @@ const Nav = () => {
               <span className="nav-form">               
                 <form className="form-only">
                     <input type="text" placeholder="Location" />
-                    <input type="date" placeholder="Event Date" />
+                    <input type="text" placeholder="Event Date" />
                     <input type="text" placeholder="Guest" />
                     <button><AiOutlineSearch />Search</button>
                 </form>

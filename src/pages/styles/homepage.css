@@ -24,11 +24,11 @@
         border-radius: 2.5rem;
         border: 2px solid var(--black-200, #CFCFCE);
         border: 1px solid #CFCFCE;
-        width: auto;
+        width: minmax(5rem, auto);
         height: 2.75rem;
         margin-inline: auto;
         color: #060605;
-        font-size: 1rem;
+        font-size: minmax(0.8rem,1rem);
         font-style: normal;
         font-weight: 500;
         line-height: 1.5rem;

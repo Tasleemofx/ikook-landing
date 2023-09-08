@@ -3,10 +3,12 @@
 .cah-div{
     width: 95vw;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19.3rem, auto));
+    display: flex;
+    flex-wrap: wrap;
     grid-auto-rows: 24.7rem;
+    gap: 1em;
     margin: 1em auto 2em auto;
+    margin-inline: auto;
     overflow: hidden;
     cursor: pointer;
 }
@@ -17,11 +19,12 @@
 .cah-card{
     box-shadow: 0px 4.94185px 4.94185px 0px rgba(0, 0, 0, 0.04);
     position: relative;
-    margin: 2em auto;
+    min-width: 20vw;
+    max-width: 19.3rem;
     border-radius: 15px;
 }
 .cah-img{
-    width: 19.3rem;
+    width: 100%;
 }
     .cah-heart{
         position: absolute;
