@@ -14,7 +14,7 @@ const [data, setData] = useState(OC)
                 return (
                     <div className="cah-card" key={id}>
                         <p className="cah-cuisine">{location}</p>
-                        <img src={foodimg} alt="food" />
+                        <img src={foodimg} alt="food" className='cah-img'/>
                             <img src={avi} alt="chef" className="img-po"/>
                             <div className="f-col price-pos">
                                 <p className="oc-nm">{chefName}</p>

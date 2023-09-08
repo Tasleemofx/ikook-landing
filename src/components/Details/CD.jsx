@@ -14,7 +14,7 @@ const CorporateDining = () => {
                 return (
                     <div className="cah-card" key={id}>
                         <p className="cah-cuisine">{location}</p>
-                        <img src={foodimg} alt="food" />
+                        <img src={foodimg} alt="food" className='cah-img'/>
                             <img src={avi} alt="chef" className="img-po"/>
                             <p className='price-pos'>From {minimum}</p>
                         <span className='event-dets'>
