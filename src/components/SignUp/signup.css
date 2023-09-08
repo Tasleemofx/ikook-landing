@@ -55,7 +55,6 @@
     padding-left: 0.5em;
 }
 .form-outline select{
-    width: 80%;
     height: 3.75rem;
     margin-bottom: 1.5em;
     border: 1.5px solid rgba(50, 51, 53, 0.30);
@@ -204,10 +203,11 @@
     gap: 2px;
 }
 .inp-div,
-.sm-div {
+.sm-div,
+.ref-select
+ {
     width: 44.87488rem;
     height: 3.75rem;
-    flex-shrink: 0;
 }
 .sm-bx ,
 .flex-bg{

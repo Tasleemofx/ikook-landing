@@ -164,7 +164,7 @@ const SignUp = () => {
                     <span className={ !formvalues.criminal_record? "yel-bd": "wh-bd"}   onClick={()=> setFormvalues({...formvalues, criminal_record: false})}>No</span>
                 </div>
             </div>
-            <select onChange={(e)=> setFormvalues({...formvalues, reference: e.target.value})}>
+            <select onChange={(e)=> setFormvalues({...formvalues, reference: e.target.value})} className="ref-select">
                 <option default>How did you hear about us?</option>
                 <option value="Twitter">Twitter</option>
                 <option value="Linkedin">Linkedin</option>

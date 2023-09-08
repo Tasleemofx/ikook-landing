@@ -18,12 +18,11 @@ const Footer = () => {
                     <input type="text" placeholder="Enter Email to join our Newsletter" className="mai-inp" />
                     <button type="submit" className="subscribe">Subscribe</button>
                 </form>
-                
-                
+                              
             </section>
             <section className="section-tw">
-                <img src={Logo} alt="footer logo" className="flog" />
-                <img src={soc} alt="social media" className="soc"/>
+                 <img src={Logo} alt="footer logo" className="flog" />
+                <img src={soc} alt="social media" className="soc"/> 
             </section>
                 <section className="section-th">
                 <div className="f-col">
@@ -65,7 +64,7 @@ const Footer = () => {
                         <a>team@ikook.co.uk</a>
                         <a>Support</a>
                     </div>
-                    <img src={Payment} alt="payment icons" />
+                    <img src={Payment} alt="payment icons" className="payment-icons"/>
                 </div>
                 </section>
             
