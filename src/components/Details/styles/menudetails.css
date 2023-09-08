@@ -6,9 +6,9 @@
     display: flex;
     flex-wrap: wrap;
     grid-auto-rows: 24.7rem;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 5vw;
     margin: 1em auto 2em auto;
-    margin-inline: auto;
     overflow: hidden;
     cursor: pointer;
 }
@@ -20,7 +20,7 @@
     box-shadow: 0px 4.94185px 4.94185px 0px rgba(0, 0, 0, 0.04);
     position: relative;
     width: 20vw;
-    height: fit-content;
+    height:19rem;
     padding-bottom: 1rem;
     border-radius: 15px;
     margin-bottom: 1rem;
